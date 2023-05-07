@@ -11,12 +11,6 @@ const eventSchema = new mongoose.Schema(
       ref: 'User',
       required: true,
     },
-    invitees: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
-      },
-    ],
     date: {
       type: Date,
       default: Date.now,
